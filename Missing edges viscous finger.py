@@ -1,3 +1,10 @@
+from paraview.simple import *
+import vtk
+view = GetActiveViewOrCreate('RenderView')
+layout1 = GetLayout()
+layout1.SplitHorizontal(0, 0.5)
+renderView2 = CreateView('RenderView')
+AssignViewToLayout(view=view1, layout=layout1, hint=2)
 Names = []
 for i in range(119):
  Names.append('Temporal\Re\Sample_'+ str(i) +'.vtk')
