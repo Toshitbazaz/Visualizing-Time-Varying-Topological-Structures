@@ -1,3 +1,10 @@
+from paraview.simple import *
+import vtk
+view = GetActiveViewOrCreate('RenderView')
+layout1 = GetLayout()
+layout1.SplitHorizontal(0, 0.5)
+view1 = CreateView('RenderView')
+AssignViewToLayout(view=view1, layout=layout1, hint=2)
 v2 = input("Enter the frame number:\n")
 v2 = int(v2)
 Message1 = "Error! Frame out of bound\n"
