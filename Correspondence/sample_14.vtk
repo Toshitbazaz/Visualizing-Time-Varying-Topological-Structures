@@ -1,0 +1,18 @@
+# vtk DataFile Version 4.2
+vtk output
+ASCII
+DATASET POLYDATA
+POINTS 8 float
+64.5 108.5 32.5 63.5 114.5 36.5 63.5 34.5 28.5 
+63.5 36.5 23.5 63.5 95.5 93.5 63.5 91.5 96.5 
+63.5 33.5 93.5 63.5 36.5 96.5 
+LINES 4 12
+2 0 1 
+2 2 3 
+2 4 5 
+2 6 7 
+
+CELL_DATA 4
+COLOR_SCALARS Colors 3
+1 1 1 1 1 1 1 1 1 
+1 1 1 
