@@ -1,3 +1,10 @@
+from paraview.simple import *
+import vtk
+view = GetActiveViewOrCreate('RenderView')
+layout1 = GetLayout()
+layout1.SplitHorizontal(0, 0.5)
+view1 = CreateView('RenderView')
+AssignViewToLayout(view=view1, layout=layout1, hint=2)
 file1 = open("3.csv","r")
 line = file1.readline()
 line = file1.readline()
